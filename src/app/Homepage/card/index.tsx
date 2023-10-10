@@ -5,37 +5,39 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  >
-    •
-  </Box>
-);
+import { Tab } from "../../../../node_modules/@mui/icons-material/index";
+import { AppBar, Tabs } from "../../../../node_modules/@mui/material/index";
 
 const card = (
   <React.Fragment>
     <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        Word of the Day
-      </Typography>
       <Typography variant="h5" component="div">
-        be{bull}nev{bull}o{bull}lent
+        Get Test Tokens
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
-        adjective
+
+      <Typography variant="body2" color="text.secondary" mb={4}>
+        This faucet transfers Test Tokens and Gas Tokens on Polygon PoS and
+        zkEVM testnets and its parent chain (Goerli). Confirm details before
+        submitting
       </Typography>
-      <Typography variant="body2">
-        well meaning and kindly.
-        <br />
-        {'"a benevolent smile"'}
+      <Typography variant="h6" component="div">
+        Network
       </Typography>
+      <AppBar position="static">
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          indicatorColor="secondary"
+          textColor="inherit"
+          variant="fullWidth"
+          aria-label="full width tabs example"
+        >
+          <Tab label="Item One" {...a11yProps(0)} />
+          <Tab label="Item Two" {...a11yProps(1)} />
+          <Tab label="Item Three" {...a11yProps(2)} />
+        </Tabs>
+      </AppBar>
     </CardContent>
-    <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions>
   </React.Fragment>
 );
 

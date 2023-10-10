@@ -12,6 +12,7 @@ const index = () => {
       bgcolor={"white"}
       borderRadius={2}
       padding={2}
+      margin={4}
     >
       <Link
         href="/"

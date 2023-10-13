@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
 const index = () => {
   return (
@@ -10,9 +11,7 @@ const index = () => {
         textAlign: "center",
       }}
       bgcolor={"white"}
-      borderRadius={2}
       padding={2}
-      margin={4}
     >
       <Link
         href="/"
@@ -24,7 +23,15 @@ const index = () => {
           gap: "10px",
         }}
       >
-        <AllInclusiveIcon />
+        {/* <AllInclusiveIcon /> */}
+        <Box
+          component="img"
+          sx={{
+            height: 30,
+            width: 30,
+          }}
+          src="https://raw.githubusercontent.com/Ramestta-Blockchain/ramascan/main/public/static/ramestta_32x32_mm_icon.svg"
+        />{" "}
         <Typography sx={{ minWidth: 100 }} fontSize={18} fontWeight={800}>
           Ramestta Faucet
         </Typography>
@@ -40,7 +47,7 @@ const index = () => {
           <Typography sx={{ minWidth: 100 }}>Report issue</Typography>
         </Link>{" "}
         <Link href="/" style={{ textDecoration: "none", color: "white" }}>
-          <Button>Connect Wallet</Button>
+          <ConnectButton showBalance={false} />
         </Link>
       </Box>
     </Box>

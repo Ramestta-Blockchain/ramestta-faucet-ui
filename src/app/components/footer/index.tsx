@@ -12,7 +12,7 @@ const index = () => {
       }}
     >
       <Typography sx={{ minWidth: 100 }} fontSize={18} fontWeight={800}>
-        © 2023{" "}
+        © 2023{"  "}
         <a
           href="https://www.ramestta.com"
           target="_blank"

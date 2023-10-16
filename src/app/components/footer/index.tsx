@@ -18,8 +18,8 @@ const index = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ramestta.com{" "}
-        </a>
+          Ramestta.com
+        </a>{" "}
         | All rights reserved{" "}
       </Typography>
 

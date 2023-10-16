@@ -65,7 +65,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
       rpc: (chain) => ({
         http:
           chain.id === 1377
-            ? `https:testnet.ramascan.com`
+            ? `https:testnet.ramestta.com`
             : "https://blockchain.ramestta.com",
       }),
     }),

@@ -24,14 +24,7 @@ const index = () => {
         }}
       >
         {/* <AllInclusiveIcon /> */}
-        <Box
-          component="img"
-          sx={{
-            height: 30,
-            width: 30,
-          }}
-          src="https://raw.githubusercontent.com/Ramestta-Blockchain/ramascan/main/public/static/ramestta_32x32_mm_icon.svg"
-        />{" "}
+        <img src="/logo.svg" height={40} />{" "}
         <Typography sx={{ minWidth: 100 }} fontSize={18} fontWeight={800}>
           Ramestta Faucet
         </Typography>

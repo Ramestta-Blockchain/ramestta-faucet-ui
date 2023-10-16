@@ -7,7 +7,6 @@ import Footer from "./components/footer";
 import * as React from "react";
 import "@rainbow-me/rainbowkit/styles.css";
 import { Providers } from "./providers";
-
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
